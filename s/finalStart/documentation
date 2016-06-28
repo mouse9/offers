@@ -1,0 +1,26 @@
+Vendors...
+
+
+userId primaryKey
+password
+number
+emailAddress
+image url 1
+image url 2
+image url 3
+offers Table
+Address
+Main Category
+Timing
+ClosedOn
+
+
+Hotel & Restaurent			---- one
+Sweets Shops & Bakery			---- two
+Deserts zone				---- three
+Entertainment				---- four
+Grocery & Vegetables			---- five
+Spa, Saloon & Parlors			---- six
+Mobiles & Computers			---- seven
+Health & Fitness			---- eight
+Fashion & Glamour			---- nine	

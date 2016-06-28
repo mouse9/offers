@@ -1,0 +1,36 @@
+		<md-content flex>
+			<md-toolbar class="md-hue-2 myToolbar" >
+				<div class="md-toolbar-tools">
+					<p class="text"> Offers Club </p>
+				</div>
+			
+			</md-toolbar>		
+		</md-content>
+	<div  layout-gt-md="row" layout-sm="column" layout-xs="column" flex>
+	<div class="space"></div>
+	<div ng-show="error" class ="black" flex-offset-xs="5">{{error}}</div> 
+		<div layout="column">
+		<form name="form" layout="column" flex-offset-gt-md="25" flex-offset-sm="25" flex-offset-xs="5">
+		<md-whiteframe class="md-whiteframe-24dp bott" id="tv" >
+
+			<md-input-container >
+				<label for="Mobile Number">Mobile Number</label>
+				<input type="text" name="user"
+					ng-model="data2.namee" md-autofocus required/><br>
+				
+			</md-input-container>
+			
+			<md-input-container>
+				<label for="Password">Password</label>
+				<input type="password" name="pass"
+				ng-model="data2.Password" md-autofocus required/><br>
+			</md-input-container>
+
+		</md-whiteframe>
+		</form>
+		<div layout="row" class="bu" flex-offset-sm="30" flex-offset-xs="10" flex-offset-gt-md="30">
+			<md-button  ng-disabled="form.user.$error.required || form.pass.$error.required" class="md-warn md-primary" ng-click="xyz()" >Login</md-button>
+			<md-button class="md-warn" ng-click="regi()">Not a member ?</md-button> 
+		</div></div>
+	</div>
+	</div>

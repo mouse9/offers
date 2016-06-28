@@ -1,0 +1,78 @@
+	<header md-page-header>
+        <div md-header-picture ng-style="{'background-image': 'url(' + '/vendorImage/temp.jpg' + ')'}"></div>
+        <md-toolbar scroll>
+          <div class="md-toolbar-tools">
+            <h2 md-header-title flex>data.nameOfShop</h2>
+          </div>
+        </md-toolbar>
+       <div class="main-fab"></div>
+     </header> 
+    <br /><br />
+     <!-- Angular Material Dependencies -->
+    <br /><br />
+    <section id="page-section">
+      <md-content>
+        <md-list>
+          <md-item>
+            <md-item-content>
+              <div class="md-tile-left">
+                <i class="ion-android-call">Offers</i>
+              </div>
+              <div class="md-tile-content">
+                <i class="ion-android-hangout" style="float:right;margin-right:18px;margin-top:8px;color:#aaa;"></i>
+                <h3 style="padding-top:8px;">coming Soon..</h3>
+              </div>
+            </md-item-content>
+          </md-item>
+          <md-item>
+            <md-item-content>
+              <div class="md-tile-left">
+                  Timings
+              </div>
+              <div class="md-tile-content">
+                <i class="ion-android-hangout" style="float:right;margin-right:18px;color:#aaa;"></i>
+                <h3>{{data.timing}}</h3>
+              </div>
+            </md-item-content>
+          </md-item>
+          
+          <md-divider></md-divider>
+          <md-item>
+            <md-item-content>
+              <div class="md-tile-left">
+                <i class="ion-android-mail">Contact Number </i>
+              </div>
+              <div class="md-tile-content" >
+                <h3 style="padding-top:8px;">{{data.number}}</h3>
+              </div>
+            </md-item-content>
+          </md-item>
+          <md-item>
+            <md-item-content>
+              <div class="md-tile-left">
+                  Menu
+              </div>
+              <div class="md-tile-content">
+                <h3>Coming soon...</h3>
+              </div>
+            </md-item-content>
+          </md-item>
+          <md-divider></md-divider>
+          
+          <md-item>
+            <md-item-content>
+              <div class="md-tile-left">
+                <i class="ion-android-pin">Address</i>
+              </div>
+              <div class="md-tile-content" >
+                <h3 style="padding-top:8px;">{{data.address}}</h3>
+              </div>
+            </md-item-content>
+          </md-item>
+                    <md-divider></md-divider>
+          
+          
+        </md-list>
+      </md-content>
+    </section>
+     <!-- Angular Material Dependencies -->

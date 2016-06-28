@@ -1,0 +1,15 @@
+
+app2.controller('tempCon',tempCon);
+function tempCon($scope,$rootScope){
+	$scope.data=$rootScope.DataSh;
+	/*$scope.abbcc = $scope.dataaa.RowDataPacket;
+	var pos = $http({
+		method:'POST',
+		url:'/temp2.html',
+		data:{abc:$scope.dataaa.getPropertyValue('userId')}
+	})
+	pos.success(function(response){
+		$location.path('/');
+	});*/
+}
+

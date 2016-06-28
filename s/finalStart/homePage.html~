@@ -1,0 +1,92 @@
+<md-content>
+			<md-toolbar class="md-hue-2 myToolbar" >
+				<div class="md-toolbar-tools">
+					 <md-button class="md-icon-button myButton" ng-click="xyz()" aria-label="Settings">
+						<md-icon ng-if="isOpen()" class="material-icons" md-svg-icon="img/back.svg" ></md-icon>
+                     				<md-icon ng-if="isClose()" class="material-icons" md-svg-icon="img/nav.svg" ></md-icon>
+                  			</md-button>
+					<p class="text"> Offers Club </p>
+				</div>
+			
+			</md-toolbar>		
+		</md-content>
+		
+		
+		
+
+<div >
+  <md-grid-list
+        md-cols-xs="2" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6"
+        md-row-height-gt-md="1:1" md-row-height="2:2"
+        md-gutter="12px" md-gutter-gt-sm="8px" >
+    <md-grid-tile class="gray"
+        md-rowspan="1" md-colspan="1" ng-click="clicked('one')" >
+	<img class="full" src='MainImage/hotel.jpeg' ></img>
+      <md-grid-tile-footer>
+        <h3>Hotel & Restaurant</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+    <md-grid-tile class="green"  md-rowspan="1" md-colspan="1" ng-click="clicked('two')">
+	<img class="full" src='MainImage/sweet.jpg' ></img>
+      <md-grid-tile-footer>
+        <h3>Sweet Shops & Bakery</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile  >
+    <md-grid-tile class="yellow" md-rowspan="1" md-colspan="1" ng-click="clicked('three')">
+	<img class="full" src='MainImage/desserts.jpg' ></img>
+      <md-grid-tile-footer>
+        <h3>Desserts & Ice Cream</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile  >
+    <md-grid-tile class="blue"
+        md-rowspan="1" md-colspan="1" ng-click="clicked('four')">
+	<img class="full" src='MainImage/entertainment.jpg' ></img>
+      <md-grid-tile-footer>
+        <h3>Entertainment</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile >
+    <md-grid-tile class="red"
+        md-rowspan="1" md-colspan="1" ng-click="clicked('eight')">
+	<img class="full" src='MainImage/fitness.jpg' ></img>
+      <md-grid-tile-footer>
+        <h3>Health & Fitness</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+    <md-grid-tile class="green"
+        md-rowspan="1" md-colspan="1"  ng-click="clicked('seven')">
+	<img class="full" src='MainImage/mobile.jpeg' ></img>
+      <md-grid-tile-footer>
+        <h3>Mobile & Computers</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+	<md-grid-tile class="green"
+        md-rowspan="1" md-colspan="1"  ng-click="clicked('six')">
+	<img class="full" src='MainImage/saloon.jpg' ></img>
+      <md-grid-tile-footer>
+        <h3>Spa,Saloon, Beauty Parlor</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+	
+	<md-grid-tile class="green"
+       md-rowspan="1" md-colspan="1" ng-click="clicked('five')" >
+	<img class="full" src='MainImage/vegetables.jpg' ></img>
+      <md-grid-tile-footer>
+        <h3>Vegetables & Grocery</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+
+	
+		<!-- (gt-md) for laptops..
+		     (xs   ) for 4 to 5 inch mobile
+		     (sm)    for tablets --> 		
+		
+		<md-sidenav class="md-sidenav-left sa" md-component-id="right" id="tool">
+	     		<md-list class="saText" ng-controller="listC">
+				<md-list-item  ng-repeat="name in allNames" ng-click="goTo(name.url,$event)">
+					<img  ng-src="{{name.im}}" class="md-avatar" /><p>{{name.namee}}</p><md-divider></md-divider>
+				</md-list-item>
+			</md-list>		
+</md-sidenav>
+

@@ -1,0 +1,8 @@
+{
+	"manifest_version":6,
+	"name":"Offers Club",
+	"display":"standalone",
+	"background_color":"blue"
+
+	
+}

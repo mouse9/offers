@@ -1,0 +1,34 @@
+<div>
+		<md-content>
+			<md-toolbar class="md-hue-2 myToolbar" >
+				<div class="md-toolbar-tools">
+					<p class="text"> Offers Club </p>
+				</div>
+			
+			</md-toolbar>		
+		</md-content>
+	<div ng-show="error" class ="black">{{error}}</div> 
+	<div layout="column" >
+		<md-whiteframe class="md-whiteframe-24dp bott" id="tv" >
+
+			<md-input-container >
+				<label for="User Id">User Id</label>
+				<input type="text" id="user"
+					ng-model="data2.userId" md-autofocus/><br>
+
+			</md-input-container>
+			<md-input-container>
+				<label for="Password">Password</label>
+				<input type="password" id="pass"
+				ng-model="data2.Password" md-autofocus/><br>
+			</md-input-container>
+
+
+		</md-whiteframe>
+		<div layout="row" class="bu">
+			<md-button layout="row" class="md-warn md-primary" ng-click="xyz()" >Login</md-button>
+		</div>
+	
+	</div>
+	</div>
+

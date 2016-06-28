@@ -1,0 +1,24 @@
+<md-content>
+			<md-toolbar class="md-hue-2 myToolbar" >
+				<div class="md-toolbar-tools">
+					<p class="text"> Offers Club </p>
+				</div>
+			
+			</md-toolbar>		
+		</md-content>
+<div ng-repeat="data in allData"   >
+<md-card class="nano"  md-theme-watch ng-click="tempClicked(data.userId)">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{data.nameOfShop}}</span>
+    	    <span class="subheadFont">{{data.sub}}</span> 
+          </md-card-title-text>
+          <md-card-title-media>
+		<img  class="md-media-lg card-media" ng-src="{{data.imageUrl1}}" ></img>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>More Info</md-button>
+        </md-card-actions>
+    </md-card>
+</div>

@@ -1,0 +1,157 @@
+.fixTop{
+	position:fixed;
+	top:0px;
+}
+.themeBack{
+	background:url("img/bck.jpg") center center;
+	background-position:0px 0px;
+	background-attachment:relative;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	 
+
+}
+.dialogg{
+	height:80%;
+	width:80%
+
+}
+.hi100{
+	height:100%;
+}
+.offersClub{
+	color:red;
+	font-size:120%;	
+	
+}
+.wid100{
+	width:100%;
+}
+
+.wid33{
+	width:33%;
+}
+
+.fixBottom{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+}
+
+.myToolbar{
+	width:100%;
+	height:7%;
+	top:0%;
+	
+}
+.www{
+}
+.xyz{
+	width:100%;
+}	
+.nano{
+	height:250px;
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:4%;
+}
+.full{
+	height:100%;
+	width:100%;
+}
+md-button:focus{
+	background-color:blue;
+}
+
+
+#tool{
+
+}
+.white{
+	color:#ffffff;
+}
+.myButton{
+	top:8%;	
+}
+.sa{
+	
+	position:absolute;
+	top:7%;
+	opacity:.70;
+	background-color:#ADD8E6;
+
+}
+.bu{
+	position:relative;
+	top:0%;
+}
+.toolBar{
+	height:40%;
+}
+.toolBarImage{
+	height:100%;
+	
+}
+.saText{
+}
+.text{
+	top:20%;
+}
+.bott{
+	top:40%;
+	background-color:white;
+	box-shadow:5px 7px 2px red;
+}
+.space{
+	margin-top:50%;
+	margin-right:30%; 	}
+.wh{
+	color:white;
+}
+.black{
+	background-color:#cccccc;
+	color:red;
+	width:350px;
+	height:40px;
+	
+}
+.alertmee{
+	background-color:#cccccc;
+	color:red;	
+}
+#tv { position: relative; width: 300px; height: 250px; margin: 20px 0; background: white; border-radius: 50% / 10%; color: white; text-align: center; text-indent: .1em; } #tv:before { content: ''; position: absolute; top: 10%; bottom: 10%; right: -5%; left: -5%; background: inherit; border-radius: 5% / 50%; }
+.ful{
+	height:100%;
+	width:100%;
+}
+
+
+
+
+
+
+md-grid-list {
+  margin: 8px; }
+.gray {
+  background: #f5f5f5; }
+.green {
+  background: #b9f6ca; }
+.yellow {
+  background: #ffff8d; }
+.blue {
+  background: #84ffff; }
+.purple {
+  background: #b388ff; }
+.red {
+  background: #ff8a80; }
+md-grid-tile {
+  transition: all 400ms ease-out 50ms; }
+.subheadFont{
+	font-size:20px;
+	opacity:0.70;
+	margin-top:5%;
+	width:50%;
+}
+

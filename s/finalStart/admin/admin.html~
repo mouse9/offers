@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title> Add Data</title>
+	</head>
+	<body>
+		<form action="/addData.html" method="POST">
+			UserId:&nbsp
+			<input type="text" name = "userId"/><br/>
+			Password:&nbsp
+			<input type="text" name="password"/><br/>
+			Mobile Number:&nbsp
+			<input type="text" name="number"/><br/>
+			Email Address:&nbsp
+			<input type="text" name="emailAddress"/><br/>
+			Name of Company :
+			<input type="text" name="nameOfShop"/><br/>
+			Address:&nbsp
+			<textarea rows="3" cols="25" name="address"> Address</textarea><br/>
+			Type:			
+			<select name="category">
+				<option value="one">Hotel & Restaurent</option>
+				<option value="two">Sweets Shops & Bakery</option>
+				<option value="three">Deserts zone</option>
+				<option value="four">Entertainment</option>
+				<option value="five">Grocery & Vegetables</option>
+				<option value="six">Spa, Saloon & Parlors</option>
+				<option value="seven">Mobiles & Computers</option>
+				<option value="eight">Health & Fitness</option>
+				<option value="nine">Fashion & Glamour</option>
+			</select><br/>
+			Timings:&nbsp
+			<input type="text" name = "timings"/><br/>
+			ClosedOn:&nbsp
+			<input type="checkbox" name="closedOn" value="monday"/> Monday:&nbsp
+			<input type="checkbox" name="closedOn" value="tuesday"/> Tuesday:&nbsp
+			<input type="checkbox" name="closedOn" value="wednesday"/> Wednesday:&nbsp
+			<input type="checkbox" name="closedOn" value="thursday"/> Thrusday:&nbsp
+			<input type="checkbox" name="closedOn" value="friday"/> Friday:&nbsp
+			<input type="checkbox" name="closedOn" value="saturday"/> Saturday:&nbsp
+			<input type="checkbox" name="closedOn" value="sunday"/> Sunday:&nbsp<br/>	
+			<input type="submit"/>
+			SubHeading Line... (Like which foods are available and so... :&nbsp
+			<input type="text" name = "sub"/><br/>
+		</form>
+	</body>
+</html>

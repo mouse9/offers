@@ -1,0 +1,49 @@
+ <div class="container">
+   <div id="signup">
+      <div class="signup-screen">
+         <div class="space-bot text-center">
+            <h1>Sign up</h1>
+           <div class="divider"></div>
+         </div>
+		
+		
+		<p ng-if="avail">Sorry This Number is already taken</p>
+		<md-progress-circular ng-if="avail2" md-mode="indeterminate"></md-progress-circular>		
+		<!--<md-input-container class="input-group">	      
+              <input id="name" type="text" ng-model="userName" class="validate " ng-blur="check()" required> 
+              <label for="name">UserName</label>
+				
+		</md-input-container>-->
+	
+	<form name="form">	 
+           <md-input-container  class="input-group">
+              <input id="number"  name="n" ng-model="number" type="number" class="validate wh" ng-blur="check()" ng-minlength="10" ng-maxlength="10" required>
+              <label for="number" class="wh">Mobile Number</label>
+		<span ng-show="form.n.$error.required || form.n.$error.number" style="color:red;font-size:13px;">Valid Phone Number is Required</span>
+		<span ng-show="form.n.$error.minlength || form.n.$error.maxlength" style="color:red;font-size:13px;"> Phone Number Should be of 10 digits</span> 
+              </md-input-container> 
+              <md-input-container  class="input-group">
+              <input id="email"  ng-model="email" type="email" name="emaill"  ng-model="email" class="validate wh" required>
+              <label for="email" class="wh">Email</label>
+             </md-input-container>
+              <md-input-container  class="input-group">
+               <input id="password" ng-model="password" type="password" name="password" ng-model="password" ng-minlength='6' class="validate wh" required>
+               <label for="password" class="wh">Password</label>
+               </md-input-container  class="input-group">
+		</form>
+              <div class="space-top text-center">
+		               
+		<md-button ng-disabled="form.number.$error.required || form.emaill.$error.required || form.emaill.$error.email" class="waves-effect waves-light btn done" ng-click="register()">
+               <i class="material-icons left" >done</i> Done
+               </md-button>
+               <md-button class="waves-effect waves-light btn cancel"  ng-click="check()">
+               <i class="material-icons left">clear</i>Cancel
+               </md-button>
+              </div>
+           </div>
+        </div>
+	
+  </div>
+	
+    </div>
+
